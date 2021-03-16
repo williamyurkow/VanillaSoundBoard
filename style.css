@@ -9,7 +9,7 @@ html {
 
 body,
 html {
-  margin: 0;
+  margin: 5;
   padding: 0;
   font-family: sans-serif;
 }
@@ -43,8 +43,8 @@ html {
 }
 
 kbd {
-  display: block;
-  font-size: 4rem;
+  display: inline;
+  font-size: 5rem;
 }
 
 .sound {

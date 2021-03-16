@@ -15,27 +15,27 @@
       </div>
       <div data-key="83" class="key">
         <kbd>S</kbd>
-        <span class="sound">clap00</span>
+        <span class="sound">appy</span>
       </div>
       <div data-key="68" class="key">
         <kbd>D</kbd>
-        <span class="sound">clap01</spanclass>
+        <span class="sound">apper</spanclass>
       </div>
       <div data-key="70" class="key">
         <kbd>F</kbd>
-        <span class="sound">confessions</span>
+        <span class="sound">oo</span>
       </div>
       <div data-key="71" class="key">
         <kbd>G</kbd>
-        <span class="sound">loop</span>
+        <span class="sound">oop</span>
       </div>
       <div data-key="72" class="key">
         <kbd>H</kbd>
-        <span class="sound">oldschool</span>
+        <span class="sound">oliday</span>
       </div>
       <div data-key="74" class="key">
         <kbd>J</kbd>
-        <span class="sound">powerup</span>
+        <span class="sound">owerup</span>
       </div>
       <div data-key="75" class="key">
         <kbd>K</kbd>
@@ -43,7 +43,7 @@
       </div>
       <div data-key="76" class="key">
         <kbd>L</kbd>
-        <span class="sound">synthwave</span>
+        <span class="sound">wave</span>
       </div>
     </div>
 
@@ -61,9 +61,12 @@
     <script>
 window.addEventListener('keydown', function(e) {
     const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+    const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+
     if(!audio) return; // This will make the function stop
-    audio.currentTime = 0;
+    audio.currentTime = 0; //rewind
     audio.play();
+    key.classList.add('playing');
 });
 
     </script>
