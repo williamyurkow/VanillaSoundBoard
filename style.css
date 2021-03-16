@@ -1,7 +1,10 @@
 html {
   font-size: 10px;
-  background: url('./moonbackground.jpg');
+  background: url('./therealdeal.jpg') center;
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
 body,
