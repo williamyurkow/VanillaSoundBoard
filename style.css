@@ -28,7 +28,7 @@ html {
   margin: 1rem;
   font-size: 1.5rem;
   padding: 1rem 0.5rem;
-  transition: all 0.07s ease;
+  transition: all 0.05s ease;
   width: 10rem;
   text-align: center;
   color: white;
@@ -37,7 +37,7 @@ html {
 }
 
 .playing {
-  transform: scale(1.1);
+  transform: scale(0.5);
   border-color: #ffc600;
   box-shadow: 0 0 1rem #ffc600;
 }
